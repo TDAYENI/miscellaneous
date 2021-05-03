@@ -1,0 +1,134 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:"Calibri Light",serif;font-size:16.0px;color:rgb(45,116,181);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:"Calibri Light",serif;font-size:16.0px;color:rgb(45,116,181);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:"Calibri",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:"Calibri",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:"Calibri",serif;font-size:11.1px;color:rgb(4,98,193);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_009{font-family:"Calibri",serif;font-size:11.1px;color:rgb(4,98,193);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:"Calibri Light",serif;font-size:13.0px;color:rgb(45,116,181);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:"Calibri Light",serif;font-size:13.0px;color:rgb(45,116,181);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:"Calibri Italic",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_008{font-family:"Calibri Italic",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background01.jpg" width=595 height=841></div>
+<div style="position:absolute;left:72.02px;top:82.38px" class="cls_002"><span class="cls_002">Practical - Overcoming HTTPS Security Issues</span></div>
+<div style="position:absolute;left:72.02px;top:129.90px" class="cls_002"><span class="cls_002">Contents</span></div>
+<div style="position:absolute;left:72.02px;top:151.14px" class="cls_003"><span class="cls_003">Practical - Overcoming HTTPS Security Issues</span></div>
+<div style="position:absolute;left:517.42px;top:151.14px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:83.06px;top:170.58px" class="cls_003"><span class="cls_003">Instructions for Windows Users</span></div>
+<div style="position:absolute;left:517.42px;top:170.58px" class="cls_003"><span class="cls_003">1</span></div>
+<div style="position:absolute;left:83.06px;top:190.14px" class="cls_003"><span class="cls_003">Instructions for Apple Users</span></div>
+<div style="position:absolute;left:517.42px;top:190.14px" class="cls_003"><span class="cls_003">7</span></div>
+<div style="position:absolute;left:72.02px;top:254.58px" class="cls_003"><span class="cls_003">In this practical we will see how to remove the ‘HTTPS’ warning error that you get whenever you try</span></div>
+<div style="position:absolute;left:72.02px;top:269.13px" class="cls_003"><span class="cls_003">to connect to your server.     s a reminder, we are getting this error as I don’t own ucl.ac.uk so can’t</span></div>
+<div style="position:absolute;left:72.02px;top:283.65px" class="cls_003"><span class="cls_003">ask for a certificate to be issued on that domain.</span></div>
+<div style="position:absolute;left:72.02px;top:306.09px" class="cls_003"><span class="cls_003">Instructions are primarily for Windows users, but draft (untested) instructions for Apple users are</span></div>
+<div style="position:absolute;left:72.02px;top:320.61px" class="cls_003"><span class="cls_003">given below.</span></div>
+<div style="position:absolute;left:72.02px;top:343.05px" class="cls_004"><span class="cls_004">** NB: The instructions in this practical should be carried out with caution and</span></div>
+<div style="position:absolute;left:72.02px;top:361.53px" class="cls_004"><span class="cls_004">are at your own risk.  Never use these instructions for a certificate that you</span></div>
+<div style="position:absolute;left:72.02px;top:379.89px" class="cls_004"><span class="cls_004">don’t trust and/or where you don’t know the source **</span></div>
+<div style="position:absolute;left:72.02px;top:406.41px" class="cls_003"><span class="cls_003">Every time you connect to </span><A HREF="https://&lt;&lt;your/">https://&lt;&lt;your</A> server IP address>></span><span class="cls_003">  the server sends a certificate to your</span></div>
+<div style="position:absolute;left:72.02px;top:420.93px" class="cls_003"><span class="cls_003">browser.  Your browser then compares this certificate to a list of official certificates to see if it is</span></div>
+<div style="position:absolute;left:72.02px;top:435.45px" class="cls_003"><span class="cls_003">legitimate/registered.  If it is, then the browser knows to trust your server.</span></div>
+<div style="position:absolute;left:72.02px;top:480.35px" class="cls_003"><span class="cls_003">Even though we don’t have a registered certificate, we can manually tell our machine to trust the</span></div>
+<div style="position:absolute;left:72.02px;top:494.87px" class="cls_003"><span class="cls_003">certificate - i.e. tell the machine that this is a trusted website.  This is something you might need to</span></div>
+<div style="position:absolute;left:72.02px;top:509.39px" class="cls_003"><span class="cls_003">do when you are developing HTTPS code on internal servers.</span></div>
+<div style="position:absolute;left:72.02px;top:554.39px" class="cls_003"><span class="cls_003">The way this is done is by adding the certificate to a list of trusted certificates held on the machine.</span></div>
+<div style="position:absolute;left:72.02px;top:599.51px" class="cls_006"><span class="cls_006">Instructions for Windows Users</span></div>
+<div style="position:absolute;left:72.02px;top:616.43px" class="cls_003"><span class="cls_003">Step 1 - Convert the Certificate to PKCS format (PKCS = public key cryptography standard).  This will</span></div>
+<div style="position:absolute;left:72.02px;top:630.95px" class="cls_003"><span class="cls_003">allow it to be recognised by the Windows machine.</span></div>
+<div style="position:absolute;left:90.02px;top:653.42px" class="cls_003"><span class="cls_003">1.</span><span class="cls_007"> </span><span class="cls_003">  Open Chrome and go to:  </span><A HREF="https://developer.cege.ucl.ac.uk:xxxxx">https://&lt;&lt;your server IP address>></A> </span></div>
+<div style="position:absolute;left:108.02px;top:682.46px" class="cls_003"><span class="cls_003">2.   Click on the ‘not secure button’ to get details of the certificate</span></div>
+<div style="position:absolute;left:108.02px;top:754.70px" class="cls_003"><span class="cls_003">3.   Click on the DETAILS tab</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:851px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background02.jpg" width=595 height=841></div>
+<div style="position:absolute;left:108.02px;top:642.50px" class="cls_003"><span class="cls_003">4.</span><span class="cls_007"> </span><span class="cls_003">  Follow the certificate export wizard steps (click </span><span class="cls_008">COPY TO FILE</span><span class="cls_003"> to start the process)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:1702px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background03.jpg" width=595 height=841></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:2553px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background04.jpg" width=595 height=841></div>
+<div style="position:absolute;left:108.02px;top:70.48px" class="cls_003"><span class="cls_003">5.   Add the certificate to the trusted certificates list on your computer by typing (from the</span></div>
+<div style="position:absolute;left:126.02px;top:85.02px" class="cls_003"><span class="cls_003">search/Cortana box) </span><span class="cls_008">manage computer certificates</span></div>
+<div style="position:absolute;left:108.02px;top:398.61px" class="cls_003"><span class="cls_003">6.   Add the certificate under THIRD PARTY ROOT CERTIFICATION AUTHORITIES</span></div>
+<div style="position:absolute;left:108.02px;top:442.05px" class="cls_003"><span class="cls_003">7.   Click IMPORT</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:3404px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background05.jpg" width=595 height=841></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:4255px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background06.jpg" width=595 height=841></div>
+<div style="position:absolute;left:108.02px;top:70.48px" class="cls_003"><span class="cls_003">8.   Clear the CHROME cache</span></div>
+<div style="position:absolute;left:108.02px;top:489.11px" class="cls_003"><span class="cls_003">9.   Restart your laptop/desktop machine</span></div>
+<div style="position:absolute;left:108.02px;top:518.03px" class="cls_003"><span class="cls_003">10.</span><span class="cls_007"> </span><span class="cls_003">Retype </span><A HREF="https://developer.cege.ucl.ac.uk:xxxxx">https://&lt;&lt;your server IP address>></A> </span><span class="cls_003">into Chrome.  You should now see a padlock</span></div>
+<div style="position:absolute;left:126.02px;top:532.55px" class="cls_003"><span class="cls_003">as follows:</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5106px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background07.jpg" width=595 height=841></div>
+<div style="position:absolute;left:108.02px;top:70.48px" class="cls_003"><span class="cls_003">11. If you click on the padlock and then click on CERTIFICATE you will see the validity dates</span></div>
+<div style="position:absolute;left:126.02px;top:85.02px" class="cls_003"><span class="cls_003">of the certificate (NB the details might be different)</span></div>
+<div style="position:absolute;left:72.02px;top:547.19px" class="cls_006"><span class="cls_006">Instructions for Apple Users (Untested)</span></div>
+<div style="position:absolute;left:72.02px;top:564.23px" class="cls_003"><span class="cls_003">** NB: These instructions were created on an iPad and are not tested.  Please share any connections</span></div>
+<div style="position:absolute;left:72.02px;top:578.75px" class="cls_003"><span class="cls_003">on Moodle **</span></div>
+<div style="position:absolute;left:90.02px;top:623.63px" class="cls_003"><span class="cls_003">1.</span><span class="cls_007"> </span><span class="cls_003">  Download the </span><span class="cls_008">developer5.p7b</span><span class="cls_003"> certificate from Moodle</span></div>
+<div style="position:absolute;left:90.02px;top:652.70px" class="cls_003"><span class="cls_003">2.   If necessary, e-mail the certificate to yourself</span></div>
+<div style="position:absolute;left:90.02px;top:681.62px" class="cls_003"><span class="cls_003">3.   Once you receive the e-mail, double-click on the certificate to start installation</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:5957px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background08.jpg" width=595 height=841></div>
+<div style="position:absolute;left:90.02px;top:441.09px" class="cls_003"><span class="cls_003">4.   Click INSTALL NOW.  You will probably be asked for your PIN or password</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:6808px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background09.jpg" width=595 height=841></div>
+<div style="position:absolute;left:90.02px;top:439.53px" class="cls_003"><span class="cls_003">5.   Click INSTALL (top right corner)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:7659px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background10.jpg" width=595 height=841></div>
+<div style="position:absolute;left:90.02px;top:441.09px" class="cls_003"><span class="cls_003">6.   Click INSTALL again</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:8510px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background11.jpg" width=595 height=841></div>
+<div style="position:absolute;left:90.02px;top:441.09px" class="cls_003"><span class="cls_003">7.   Clear browsing history e.g. in Safari</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:9361px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background12.jpg" width=595 height=841></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:10212px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background13.jpg" width=595 height=841></div>
+<div style="position:absolute;left:90.02px;top:463.55px" class="cls_003"><span class="cls_003">8.</span><span class="cls_007"> </span><span class="cls_003">  Browse to </span><A HREF="https://&lt;&lt;your/">https://&lt;&lt;your</A> server IP address>></span><span class="cls_003"> and you should now see a secure lock on the</span></div>
+<div style="position:absolute;left:108.02px;top:478.07px" class="cls_003"><span class="cls_003">site.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:11063px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="ac864190-ac16-11eb-8b25-0cc47a792c0a_id_ac864190-ac16-11eb-8b25-0cc47a792c0a_files/background14.jpg" width=595 height=841></div>
+</div>
+
+</body>
+</html>
